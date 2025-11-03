@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TraveloKu - Booking Wisata</title>
+    <link rel="stylesheet" type="text/css" href="style booking.css">
+    <link rel="icon" href="Photo/TraveloKu Icon.png" type="image/png">
+</head>
+
+<body>
+<header>
+    <div class="logo">
+        <img src="Photo/TraveloKu Icon.png" alt="Logo TraveloKu" class="logo-img">
+        <h1>Travelo<span>Ku</span></h1>
+    </div>
+
+    <nav role="navigation" aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="about.html">Tentang</a></li>
+
+            <li class="has-sub">
+                <details>
+                    <summary>Travel <span class="arrow">▼</span></summary>
+                    <ul class="sub-menu" aria-label="Sub menu destinasi">
+                        <li><a href="destinasi.html">Destinasi</a></li>
+                        <li><a href="spotlight.html">Spotlight</a></li>
+                        <li><a href="galeri.html">Galeri</a></li>
+                    </ul>
+                </details>
+            </li>
+
+            <li><a href="packages.html">Paket</a></li>
+            <li><a href="booking.html" class="active">Booking</a></li>
+            <li><a href="contact.html">Kontak</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <img src="Photo/Wonderland Indonesia.jpg" alt="TraveloKu Booking" class="hero-bg">
+    <div class="hero-text">
+        <h2>Formulir Pemesanan</h2>
+        <p>Isi data berikut untuk memesan paket wisata TraveloKu sesuai keinginan Anda.</p>
+    </div>
+</section>
+
+<main>
+    <section class="booking-section">
+        <form class="booking-form" action="#" method="post">
+            <div class="form-group">
+                <label>Nama Lengkap</label>
+                <input type="text" name="nama" placeholder="Masukkan nama Anda" required>
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" name="email" placeholder="contoh@email.com" required>
+            </div>
+
+            <div class="form-group">
+                <label>Nomor Telepon</label>
+                <input type="tel" name="telepon" placeholder="08xxxxxxxxxx" required>
+            </div>
+
+            <!-- SISTEM PILIH DESTINASI + WISATA -->
+<div class="form-group destinasi">
+    <label>Pilih Destinasi</label>
+
+    <div class="dest-grid">
+        <input type="radio" name="destinasi" id="bali" checked>
+        <label for="bali" class="dest-btn">Bali</label>
+
+        <input type="radio" name="destinasi" id="raja">
+        <label for="raja" class="dest-btn">Raja Ampat</label>
+
+        <input type="radio" name="destinasi" id="lombok">
+        <label for="lombok" class="dest-btn">Lombok</label>
+
+        <input type="radio" name="destinasi" id="yogyakarta">
+        <label for="yogyakarta" class="dest-btn">Yogyakarta</label>
+
+        <input type="radio" name="destinasi" id="bandung">
+        <label for="bandung" class="dest-btn">Bandung</label>
+
+        <input type="radio" name="destinasi" id="labuan">
+        <label for="labuan" class="dest-btn">Labuan Bajo</label>
+    </div>
+
+    <!-- Pilihan wisata muncul sesuai destinasi -->
+    <div class="wisata bali">
+        <label>Wisata di Bali</label>
+        <select name="wisata-bali">
+            <option>Pantai Kuta</option>
+            <option>Ubud</option>
+            <option>Tanah Lot</option>
+        </select>
+    </div>
+
+    <div class="wisata raja">
+        <label>Wisata di Raja Ampat</label>
+        <select name="wisata-raja">
+            <option>Pulau Wayag</option>
+            <option>Piaynemo</option>
+            <option>Sorong</option>
+        </select>
+    </div>
+
+    <div class="wisata lombok">
+        <label>Wisata di Lombok</label>
+        <select name="wisata-lombok">
+            <option>Pantai Senggigi</option>
+            <option>Gili Trawangan</option>
+            <option>Gunung Rinjani</option>
+        </select>
+    </div>
+
+    <div class="wisata yogyakarta">
+        <label>Wisata di Yogyakarta</label>
+        <select name="wisata-yogyakarta">
+            <option>Candi Prambanan</option>
+            <option>Malioboro</option>
+            <option>Tugu Jogja</option>
+        </select>
+    </div>
+
+    <div class="wisata bandung">
+        <label>Wisata di Bandung</label>
+        <select name="wisata-bandung">
+            <option>Lembang</option>
+            <option>Dago</option>
+            <option>Kawah Putih</option>
+        </select>
+    </div>
+
+    <div class="wisata labuan">
+        <label>Wisata di Labuan Bajo</label>
+        <select name="wisata-labuan">
+            <option>Pulau Komodo</option>
+            <option>Pink Beach</option>
+            <option>Pulau Padar</option>
+        </select>
+    </div>
+</div>
+
+
+            <!-- END SISTEM PILIH DESTINASI -->
+
+            <div class="form-group">
+                <label>Tanggal Keberangkatan</label>
+                <input type="date" name="tanggal" required>
+            </div>
+
+            <div class="form-group">
+                <label>Jumlah Orang</label>
+                <input type="number" name="jumlah" min="1" placeholder="Jumlah peserta" required>
+            </div>
+
+            <div class="form-group">
+                <label>Catatan Tambahan</label>
+                <textarea name="catatan" rows="4" placeholder="Tulis permintaan khusus (jika ada)..."></textarea>
+            </div>
+
+            <div class="form-btn">
+                <button type="submit" class="btn-primary">Kirim Pemesanan</button>
+            </div>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <div class="container footer-grid">
+        <div class="footer-section">
+            <h3>TraveloKu</h3>
+            <p>Teman perjalanan Anda untuk menjelajahi pesona alam dan budaya Indonesia.</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Informasi</h3>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="about.html">Tentang Kami</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Layanan</h3>
+            <ul>
+                <li><a href="packages.html">Paket Wisata</a></li>
+                <li><a href="booking.html">Booking</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Sosial Media</h3>
+            <ul>
+                    <li><a href="https://www.facebook.com/TraveloKu">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/TraveloKu">Instagram</a></li>
+                    <li><a href="https://www.twitter.com/TraveloKu">Twitter</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
