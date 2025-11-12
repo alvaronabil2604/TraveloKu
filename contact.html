@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - TraveloKu</title>
+    <link rel="stylesheet" type="text/css" href="style contact.css">
+    <link rel="icon" href="Photo/TraveloKu Icon.png" type="image/png">
+</head>
+
+<body>
+    <header>
+  <div class="logo">
+    <img src="Photo/TraveloKu Icon.png" alt="Logo TraveloKu" class="logo-img">
+    <h1>Travelo<span>Ku</span></h1>
+  </div>
+
+  <nav role="navigation" aria-label="Main navigation">
+    <ul>
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="about.html">Tentang</a></li>
+
+      <li class="has-sub">
+        <details open>
+          <summary>Travel <span class="arrow">▼</span></summary>
+          <ul class="sub-menu" aria-label="Sub menu travel">
+            <li><a href="destinasi.html">Destinasi</a></li>
+            <li><a href="spotlight.html">Spotlight</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+          </ul>
+        </details>
+      </li>
+
+      <li><a href="packages.html">Paket</a></li>
+      <li><a href="booking.html">Booking</a></li>
+      <li><a href="contact.html" class="active">Kontak</a></li>
+    </ul>
+  </nav>
+</header>
+
+    <main>
+        <section class="contact-section">
+            <div class="container">
+                <h1>Hubungi Kami</h1>
+                <p>Kami siap membantu perjalanan wisata Anda. Silakan isi formulir di bawah ini atau hubungi kami melalui kontak yang tersedia.</p>
+
+                <div class="contact-grid">
+                    <form class="contact-form" action="#" method="post">
+                        <div class="form-group">
+                            <label for="nama">Nama Lengkap</label>
+                            <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pesan">Pesan</label>
+                            <textarea id="pesan" name="pesan" rows="5" placeholder="Tulis pesan Anda di sini..." required></textarea>
+                        </div>
+
+                        <div class="form-btn">
+                            <button type="submit" class="btn-primary">Kirim Pesan</button>
+                        </div>
+                    </form>
+
+                    <div class="contact-info">
+                        <h2>Informasi Kontak</h2>
+                        <p><strong>Email:</strong> info@traveloku.example</p>
+                        <p><strong>Telepon:</strong> +62 812 3456 7890</p>
+                        <p><strong>Alamat:</strong> Jl. Merdeka No. 45, Bandung, Indonesia</p>
+
+                        <div class="map-container">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.0244952853363!2d107.61129357486806!3d-6.918112967695372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e7b4a79a6dbb%3A0x5027a76e35509c0!2sJl.%20Merdeka%2C%20Bandung!5e0!3m2!1sid!2sid!4v1682920304312!5m2!1sid!2sid" 
+                            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <aside>
+        <div class="container aside-grid">
+            <div class="aside-section">
+                <h3>Travelo<span>Ku</span></h3>
+                <p>Jelajahi keindahan Indonesia bersama kami.</p>
+            </div>
+
+            <div class="aside-section">
+                <h3>Informasi</h3>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="about.html">Tentang Kami</a></li>
+                    <li><a href="contact.html">Kontak</a></li>
+                </ul>
+            </div>
+
+            <div class="aside-section">
+                <h3>Layanan</h3>
+                <ul>
+                    <li><a href="packages.html">Paket Wisata</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                </ul>
+            </div>
+
+            <div class="aside-section">
+                <h3>Sosial Media</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/TraveloKu">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/TraveloKu">Instagram</a></li>
+                    <li><a href="https://www.twitter.com/TraveloKu">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+
+    <footer>
+        <p>&copy; 2025 Alvaro Nabil Lukman XI-1</p>
+    </footer>
+</body>
+</html>
